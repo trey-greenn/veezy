@@ -12,15 +12,15 @@ const index = () => {
                         <Image src="/batman.jpeg" alt="profile pic" width={320} height={250}/>
                     </div>
                     <div className="flex flex-col">
-                        <h4 className="profile_name text-white text-2xl text-center">Trey Green</h4>
+                        <h4 className="profile_name text-white text-2xl text-start">Trey Green</h4>
                     </div>
-                    <div className="vid_cat flex flex-row flex-wrap overflow-x-auto gap-2 mt-1 place-content-center align-items">
+                    <div className="vid_cat flex flex-row flex-wrap overflow-x-auto gap-2 mt-1 ">
                         <span className="vid_cat rounded-2xl bg-white/30 px-1 "> Vlogs</span>
-                        <span className="vid_cat rounded-2xl bg-white/30 px-1 "> Vlogs</span>
-                        <span className="vid_cat rounded-2xl bg-white/30 px-1 "> Vlogs</span>
-                        <span className="vid_cat rounded-2xl bg-white/30 px-1 "> Vlogs</span>
-                        <span className="vid_cat rounded-2xl bg-white/30 px-1 "> Vlogs</span>
-                        <span className="vid_cat rounded-2xl bg-white/30 px-1 "> Vlogs</span>
+                        <span className="vid_cat rounded-2xl bg-red-300 px-1 "> Vlogs</span>
+                        <span className="vid_cat rounded-2xl bg-slate-300 px-1 "> Vlogs</span>
+                        <span className="vid_cat rounded-2xl bg-green-300 px-1 "> Vlogs</span>
+                        <span className="vid_cat rounded-2xl bg-cyan-300 px-1 "> Vlogs</span>
+                        <span className="vid_cat rounded-2xl bg-purple-300 px-1 "> Vlogs</span>
                     </div>
                     <div className="flex flex-row gap-4 mt-1">
                     <span className="material-symbols-outlined text-white">star_rate_half</span> 

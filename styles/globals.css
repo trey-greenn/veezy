@@ -288,7 +288,7 @@ body{
 
 ._vidThumb{
   width:350px;
-  height:250px;
+  height:195px;
 
 }
 
@@ -298,8 +298,17 @@ img{
 
 .vid_profile{
   width:fit-content;
+  height: fit-content;
 }
 
 .vid_div{
   width:fit-content;
+  height:fit-content;
+}
+
+
+a .vid_discover_profile_pic{
+  width: 48px;
+  height: 48px;
+  
 }
