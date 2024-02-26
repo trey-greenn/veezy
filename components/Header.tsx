@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
@@ -13,6 +14,11 @@ const Header = () => {
             <a>Pricing</a>
             <a>*</a>
             <a>Discord</a>
+        </div>
+        <div className="flex flex-row gap-4 items-center">
+          <Link href="#" className="rounded-full p-4 text-white border border-white">For Hire</Link>
+          <Link href="#" className="rounded-full p-4 text-white border border-white">For Business</Link>
+
         </div>
 
         </div>

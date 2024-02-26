@@ -12,6 +12,34 @@ body{
     text-shadow: 5px 5px #043aff;
   }
 
+  .discover_h1{
+    text-shadow: 5px 5px rgb(0 0 0 / 24%)
+  }
+
+  .discoverForm{
+    min-width: 400px;
+    max-width: 800px;
+    box-shadow:
+    0 8px 32px 0
+    #BF98FA
+  ;
+  }
+
+  Image{
+  
+  }
+
+.discoverSearch input{
+  width: 600px;
+  text: black;
+  height: 75px;
+  border-radius: 100px;
+  box-shadow:
+    0 8px 32px 0
+    #BF98FA
+  
+
+}
 
 .gNavb{
   place-content: center space-between;
@@ -265,8 +293,7 @@ body{
   background: rgb(255 255 255 / 24%);
   box-shadow:
     0 8px 32px 0
-    rgb(0 0 0 / 37%)
-  ;
+    rgb(0 0 0 / 37%);
   backdrop-filter: blur(15px);
   border:
   1px solid
@@ -276,6 +303,13 @@ body{
 
 .vid_cat{
   max-width: 250px;
+}
+.vid_title{
+  width: 100%;
+}
+
+.nextImage{
+  width: 100%
 }
 
 .material-symbols-outlined {
@@ -287,9 +321,13 @@ body{
 }
 
 ._vidThumb{
+  width:fit;
+  height:175px;
+}
+
+.profileImages{
   width:350px;
   height:195px;
-
 }
 
 img{
@@ -297,18 +335,66 @@ img{
 }
 
 .vid_profile{
-  width:fit-content;
+  width:100%;
   height: fit-content;
 }
 
 .vid_div{
-  width:fit-content;
-  height:fit-content;
+  padding:4px;
+  background: rgb(255 255 255 / 24%);
+  box-shadow:
+    0 8px 32px 0
+    rgb(0 0 0 / 37%);
+  backdrop-filter: blur(15px);
+  border:
+  1px solid
+  rgba(255, 255, 255, 0.18);
+  text-align: center;
+  border-radius: 8px;
+  width: full;
+  height: full;
 }
 
 
 a .vid_discover_profile_pic{
   width: 48px;
   height: 48px;
-  
 }
+
+.profile_pic{
+  box-shadow:
+    1px 1px 10px 8px
+    rgb(244 244 244 / 40%);
+  background: rgb(244 244 244 / 10%)
+}
+
+.profileBio{
+  margin-left: 5%;
+}
+
+.discover_back{
+  background: rgb(0 0 0 / 54%);
+  padding: 2.5em;
+  box-shadow:
+    0 8px 32px 0
+    rgb(0 0 0 / 37%);
+  backdrop-filter: blur(15px);
+  border:
+  1px solid
+  rgba(255, 255, 255, 0.18);
+  display: grid;
+  text-align: center
+}
+
+nextImage{
+  fill:True;
+}
+
+.profileHeader{
+  background: rgb(32 32 32);
+  width: 750px;
+  box-shadow:
+    1px 1px 10px 8px
+    rgb(244 244 244 / 40%);
+}
+
