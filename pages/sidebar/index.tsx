@@ -1,18 +1,34 @@
-import SideBar from '@/components/SideBar'
-import Image from 'next/image'
-import React from 'react'
+// CollapsibleSidebar.tsx
+import CollapsibleSidebar from '@/components/SideBar';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 const index = () => {
+  
+
   return (
     <div className="flex flex-row">
-        
-        <section className=" bg-black m-36 rounded-xl flex flex-col">
+        <CollapsibleSidebar/>
+        <section className="trueBody">
+        <div className="flex flex-row"> 
+        <section className=" bg-black rounded-xl flex flex-col m-8">
             <div className="border-b border-white">
                 <div className="flex flex-row p-8 items-center ">
                     <div className="flex flex-col ">
                         <div className="profile_pic p-2 rounded-xl h-fit">
                             <Image src="/batman.jpeg" alt="profile pic" width={250} height={500} className="rounded-lg"/>
                         </div>
+                        <div>
+                        <div className="grid grids-row-3 gap-2">
+                            <h4 className="bg-gray-400 w-fit mt-6 rounded-full px-2">Location</h4>
+                            <h4 className="bg-gray-400 w-fit mt-6 rounded-full px-2">Age</h4>
+                              
+                            <h4 className="bg-gray-400 w-fit mt-6 rounded-full px-2">Experience Level</h4>
+
+                        </div>
+
+                        </div>
+                        
                     </div>
                     <div className="phDIV flex justify-center w-full ">
                     <div className="profileHeader  rounded-lg text-white w-fit p-4">
@@ -40,7 +56,7 @@ const index = () => {
                         <div className="_vidThumb bg-transparent relative">
                             <Image alt="discover talent video" fill src="/vid_th.jpeg"  className="profileImages overflow-hidden " />
                         </div>
-                    </div>ç
+                    </div>
                     <div className="vid_title flex flex-row ">
                         <div className="vid_discover_profile_pic">
                             <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={48} height={48}/>
@@ -95,7 +111,11 @@ const index = () => {
         </section>
       
     </div>
-  )
-}
+        </section>
+    </div>
+  );
+};
 
-export default index
+export default index;
+
+

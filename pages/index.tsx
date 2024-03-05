@@ -1,14 +1,16 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import {Header} from "@/components";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className="">
-      <Header/>
-      <section className="_Section place-content-center relative my-12">
+      <Header/>  
+      <section className="_Section   my-12">
+      
         <div className="place-content-center items-center flex flex-col max-w-7xl gap-8 w-fit">
           <div className="w-[700px]">
           <h1 className="text-white text-4xl font-bold text-center">
@@ -28,12 +30,14 @@ export default function Home() {
             <h2 className="font-bold text-2xl text-gray-400">Explore</h2>
             </div>
             <div className="flex flex-row gap-6">
+              <Link href="/sidebar"> 
             <button className="rounded-full px-6 text-xl h-fit shadow-lg shadow-indigo-500/50 text-white">
               Video Editors
-            </button>
+            </button></Link>
+            <Link href="/sidebar">
             <button className="rounded-full px-6 text-xl h-fit shadow-lg shadow-indigo-500/50 text-white">
               Video Creator
-            </button>
+            </button></Link>
             </div>         
           </div>
           <div className="menU mt-24">
@@ -172,53 +176,57 @@ export default function Home() {
                 </div>
             </div>
           </div>
+          <h2 className="font-bold m-6 text-7xl">
+              Platform Features
+            </h2>
           <div className="menu">
+            
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Tools</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Direct Messaging</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>File Storage</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Project Management</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Discover</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Vetted</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Blog</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             <div>
               <a href="#">
-              <h3>Privacy</h3>
-              <p>Bluetooth, mouses, printers</p>
+              <h3>Resources</h3>
+              {/* <p>Bluetooth, mouses, printers</p> */}
             </a>
             </div>
             

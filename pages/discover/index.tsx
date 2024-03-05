@@ -1,10 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import { text } from 'stream/consumers';
+import CollapsibleSidebar from '@/components/SideBar';
 
 const index = () => {
   return (
-    <div>
+    <div className="flex flex-row">
+        <CollapsibleSidebar/>
+
+        <section>
+        
         <div className="flex justify-center mt-24">
             <h1 className="discover_h1 text-7xl">
                     Discover the world's best <br/>
@@ -26,7 +31,22 @@ const index = () => {
             </div>
             <div>
                 <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
-                    Animation
+                    Shorts
+                </button>
+            </div>
+            <div>
+                <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
+                    Vlogs
+                </button>
+            </div>
+            <div>
+                <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
+                    Music Videos
+                </button>
+            </div>
+            <div>
+                <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
+                    Highlights
                 </button>
             </div>
             <div>
@@ -36,27 +56,12 @@ const index = () => {
             </div>
             <div>
                 <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
-                    Animation
+                    Short Films
                 </button>
             </div>
             <div>
                 <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
-                    Animation
-                </button>
-            </div>
-            <div>
-                <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
-                    Animation
-                </button>
-            </div>
-            <div>
-                <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
-                    Animation
-                </button>
-            </div>
-            <div>
-                <button type= "button" title="filter_button" className="bg-black p-2 rounded-lg text-white">
-                    Animation
+                    Other
                 </button>
             </div>
         </div>
@@ -83,44 +88,104 @@ const index = () => {
                     </div>
                 </div>
                 <div className="vid_div">
-                    <div className="vid_profile">
-                        <div className="_vidThumb bg-transparent">
-                            <Image alt="discover talent video"  src="/sam_pic.webp" fill />
+                    <div className="vid_profile relative">
+                        <div className="_vidThumb bg-transparent w-full">
+                            <Image alt="discover talent video" fill src="/vid_th.jpeg" className="nextImage"  />
                         </div>
                     </div>
-                </div>
-                <div className="vid_div">
-                    <div className="vid_profile">
-                        <div className="_vidThumb bg-transparent">
-                            <Image alt="discover talent video" fill src="/vid_th.jpeg"  />
+                    <div className="vid_title flex flex-row">
+                        <div className="vid_discover_profile_pic">
+                            <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={100} height={100} />
+                        </div>
+                        <div className="">
+                            <h2 className=" flex text-white font-bold text-sm ">
+                            Tr3yway6k Ft Fat Meech “50’s to Da 100’s” (Official Video) Shot by @LewisYouNasty
+                            </h2>
 
                         </div>
+
                     </div>
                 </div>
                 <div className="vid_div">
-                    <div className="vid_profile">
-                        <div className="_vidThumb bg-transparent">
-                            <Image alt="discover talent video" src="/sam_pic.webp" fill />
+                    <div className="vid_profile relative">
+                        <div className="_vidThumb bg-transparent w-full">
+                            <Image alt="discover talent video" fill src="/vid_th.jpeg" className="nextImage"  />
                         </div>
+                    </div>
+                    <div className="vid_title flex flex-row">
+                        <div className="vid_discover_profile_pic">
+                            <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={100} height={100} />
+                        </div>
+                        <div className="">
+                            <h2 className=" flex text-white font-bold text-sm ">
+                            Tr3yway6k Ft Fat Meech “50’s to Da 100’s” (Official Video) Shot by @LewisYouNasty
+                            </h2>
+
+                        </div>
+
                     </div>
                 </div>
                 <div className="vid_div">
-                    <div className="vid_profile">
-                        <div className="_vidThumb bg-transparent">
-                            <Image alt="discover talent video" fill src="/vid_th.jpeg" />
+                    <div className="vid_profile relative">
+                        <div className="_vidThumb bg-transparent w-full">
+                            <Image alt="discover talent video" fill src="/vid_th.jpeg" className="nextImage"  />
                         </div>
+                    </div>
+                    <div className="vid_title flex flex-row">
+                        <div className="vid_discover_profile_pic">
+                            <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={100} height={100} />
+                        </div>
+                        <div className="">
+                            <h2 className=" flex text-white font-bold text-sm ">
+                            Tr3yway6k Ft Fat Meech “50’s to Da 100’s” (Official Video) Shot by @LewisYouNasty
+                            </h2>
+
+                        </div>
+
                     </div>
                 </div>
                 <div className="vid_div">
-                    <div className="vid_profile">
-                        <div className="_vidThumb bg-transparent">
-                            <Image alt="discover talent video" fill src="/sam_pic.webp"  />
+                    <div className="vid_profile relative">
+                        <div className="_vidThumb bg-transparent w-full">
+                            <Image alt="discover talent video" fill src="/vid_th.jpeg" className="nextImage"  />
                         </div>
+                    </div>
+                    <div className="vid_title flex flex-row">
+                        <div className="vid_discover_profile_pic">
+                            <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={100} height={100} />
+                        </div>
+                        <div className="">
+                            <h2 className=" flex text-white font-bold text-sm ">
+                            Tr3yway6k Ft Fat Meech “50’s to Da 100’s” (Official Video) Shot by @LewisYouNasty
+                            </h2>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div className="vid_div">
+                    <div className="vid_profile relative">
+                        <div className="_vidThumb bg-transparent w-full">
+                            <Image alt="discover talent video" fill src="/vid_th.jpeg" className="nextImage"  />
+                        </div>
+                    </div>
+                    <div className="vid_title flex flex-row">
+                        <div className="vid_discover_profile_pic">
+                            <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={100} height={100} />
+                        </div>
+                        <div className="">
+                            <h2 className=" flex text-white font-bold text-sm ">
+                            Tr3yway6k Ft Fat Meech “50’s to Da 100’s” (Official Video) Shot by @LewisYouNasty
+                            </h2>
+
+                        </div>
+
                     </div>
                 </div>
 
             </div>
 
+        </section>
         </section>
       
     </div>
