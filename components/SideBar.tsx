@@ -22,22 +22,16 @@ const CollapsibleSidebar: React.FC = () => {
             <div className={`sidebar ${sidebarOpen ? 'sidebar-open' : ''} bg-gray-400 `}>
                 {/* Sidebar content goes here */}
                 <div className="flex flex-col overflow-hidden">
-                    <a className="text-white p-4 bg-gray-400">Upload</a>
+                    <a className="text-white p-4 bg-gray-400">Message</a>
                 </div>
                 <div className="flex flex-col overflow-hidden">
-                    <a className="text-white p-4 bg-gray-400">Download</a>
+                    <a className="text-white p-4 bg-gray-400">Tools</a>
                 </div>
                 <div className="flex flex-col overflow-hidden">
                     <a className="text-white p-4 bg-gray-400">Discover</a>
                 </div>
                 <div className="flex flex-col overflow-hidden">
-                    <a className="text-white p-4 bg-gray-400">Record</a>
-                </div>
-                <div className="flex flex-col overflow-hidden">
-                    <a className="text-white p-4 bg-gray-400">Edit </a>
-                </div>
-                <div className="flex flex-col overflow-hidden">
-                    <a className="text-white p-4 bg-gray-400">Schedule</a>
+                    <a className="text-white p-4 bg-gray-400">Scheduler</a>
                 </div>
             
             </div>

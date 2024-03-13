@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 @import 'material-symbols';
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
 
 body{
   background: rgb(137,63,251);
@@ -373,10 +393,13 @@ body{
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
+  'FILL' 1,
+  'wght' 700,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 48
+}
+.scroller{
+  scroll-bar-width: none;
 }
 
 ._vidThumb{
@@ -400,7 +423,7 @@ img{
 
 .vid_div{
   padding:4px;
-  background: rgb(255 255 255 / 24%);
+  background: rgb(0 0 0 );
   box-shadow:
     0 8px 32px 0
     rgb(0 0 0 / 37%);
@@ -457,3 +480,6 @@ nextImage{
     rgb(244 244 244 / 40%);
 }
 
+.firstBio{
+  height:550px;
+}

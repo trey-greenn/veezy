@@ -6,15 +6,33 @@ const index = () => {
   return (
     <div className="flex flex-row">
         
-        <section className=" bg-black m-36 rounded-xl flex flex-col">
-            <div className="border-b border-white">
-                <div className="flex flex-row p-8 items-center ">
-                    <div className="flex flex-col ">
-                        <div className="profile_pic p-2 rounded-xl h-fit">
-                            <Image src="/batman.jpeg" alt="profile pic" width={250} height={500} className="rounded-lg"/>
+        <section className="m-36 rounded-xl flex flex-col">
+            <div className="firstBio border-b border-white bg-gray-200 rounded-lg mb-8 h-full">
+                <div className="h-1/4 bg-black rounded-t-lg">
+
+                </div>
+                    <div className="flex flex-row justify-center -mt-12">
+                        <div className="profile_pic p-2 rounded-full h-fit ">
+                            <Image src="/batman.jpeg" alt="profile pic" width={150} height={150} className="rounded-full"/>
                         </div>
                     </div>
-                    <div className="phDIV flex justify-center w-full ">
+                    <h2 className="w-full text-6xl text-center">
+                            William Trey Green
+                        </h2>
+                        <div className="px-6 pt-4">
+                        Having collaborated with a myriad of professionals across diverse projects, [Editor's Name] has honed their skills to perfection, transforming raw footage into cinematic masterpieces. Their portfolio is a testament to the versatility and artistry embedded in every frame, showcasing a keen eye for detail and a deep understanding of the nuances that make a story come alive.
+
+                            From corporate videos to feature films, [Editor's Name] has left an indelible mark on the projects they have touched, elevating the visual experience and exceeding the expectations of clients and collaborators alike. The ability to seamlessly blend technical prowess with creative intuition sets [Editor's Name] apart, making them a sought-after talent in the industry.
+
+                            </div>
+                            <div className="flex flex-row pt-6 justify-between px-12">
+                                <h4>Follow</h4>
+                                <h4>Years of Experience</h4>
+                                <h4>Price Per Hour</h4>
+                                <h4>Location</h4>
+
+                            </div>
+                    {/* <div className=" flex justify-center w-full ">
                     <div className="profileHeader  rounded-lg text-white w-fit p-4">
                         <h2 className="w-full text-6xl text-center">
                             William Trey Green
@@ -31,16 +49,18 @@ const index = () => {
                             </li>
                         </ul>
                     </div>
-                    </div>
-                </div>
+                    </div> */}
             </div>
-            <div className="grid grid-cols-3 gap-4 p-12">
-                <div className="vid_div flex flex-col">
+            <div className="bg-gray-200">
+                    <h1 className="text-center text-2xl">Portfolio</h1>
+            <div className="grid grid-cols-3 gap-4 p-12 bg-gray-200 rounded-lg">
+                
+                <div className="vid_div flex flex-col ">
                     <div className="vid_profile ">
                         <div className="_vidThumb bg-transparent relative">
                             <Image alt="discover talent video" fill src="/vid_th.jpeg"  className="profileImages overflow-hidden " />
                         </div>
-                    </div>ç
+                    </div>
                     <div className="vid_title flex flex-row ">
                         <div className="vid_discover_profile_pic">
                             <Image src="/sam_pic.webp" alt="vid_profile_image" className="rounded-full" width={48} height={48}/>
@@ -90,7 +110,7 @@ const index = () => {
                 </div>
 
             </div>
-
+            </div>
 
         </section>
       

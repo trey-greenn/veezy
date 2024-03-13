@@ -6,7 +6,7 @@ export default function Component() {
     console.log(session)
     return (
       <>
-        Signed in as {session.user.email} <br />
+        Signed in as {session.user ? session.user.email : "Unknown"} <br />
         <button onClick={() => signOut()}>Sign out</button>
       </>
     )
